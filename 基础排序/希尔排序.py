@@ -1,3 +1,5 @@
+
+
 def insert_sort(l,start,increment):
     #正宗的插入排序
     #遍历有序数组后面的未排序数组

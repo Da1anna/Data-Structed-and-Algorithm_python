@@ -4,7 +4,7 @@
 为啥输出是对的？
 
 原因见注解，这种写法不好的地方有两个
-www.walltu.com：不区分while循环结束的条件就赋值，不易于理解
+1：不区分while循环结束的条件就赋值，不易于理解
 当i==j时，将自生值赋给自生，多余操作
 2：如果i<j时退出的循环，赋值后后一个while循环会再次
 判断arr[i or j]与x的大小，属于多余判断
@@ -22,8 +22,8 @@ def Quick_sort1(arr,left,right):
                j -= 1
             arr[i] = arr[j]   #同上
         arr[i] = x
-        # Quick_sort1(arr,left,i-www.walltu.com)
-        # Quick_sort1(arr,i+www.walltu.com,right)
+        Quick_sort1(arr,left,i-1)
+        Quick_sort1(arr,i+1,right)
 
 '''
 递归版，左右指针法
@@ -40,17 +40,14 @@ def Quick_sort2(arr,left,right):
                 j -= 1
             arr[i],arr[j] = arr[j],arr[i]
         arr[i],arr[right] = arr[right],arr[i]
-        # Quick_sort2(arr,left,i-www.walltu.com)
-        # Quick_sort2(arr,i+www.walltu.com,right)
+        Quick_sort2(arr,left,i-1)
+        Quick_sort2(arr,i+1,right)
 
 arr = list(map(int,input().strip().split()))
 left,right = 0,len(arr)-1
 
 Quick_sort2(arr,left,right)
-res_str = ''
-for i in arr:
-    res_str += str(i) + ' '
-print(res_str.strip())
+print(' '.join(str(i) for i in arr).strip())
 
 
 '''
@@ -107,10 +104,7 @@ def Quick_sort_NotR(arr,left,right):
 arr = list(map(int,input().strip().split()))
 left,right = 0,len(arr)-1
 
-Quick_sort_NotR(arr,left,right)
-res_str = ''
-for i in arr:
-    res_str += str(i) + ' '
-print(res_str.strip())
+# Quick_sort_NotR(arr,left,right)
 
+print(' '.join(str(i) for i in arr).strip())
 

@@ -12,7 +12,8 @@ def Bubble_sort(lst):
     return lst
 lst = list(map(int,input("请输入一个数组：").strip().split()))
 res = Bubble_sort(lst)
-res_str = ''
-for i in res:
-    res_str += str(i) + ' '
-print(res_str.strip())
+# res_str = ''
+# for i in res:
+#     res_str += str(i) + ' '
+# print(res_str.strip())
+print(' '.join(str(i) for i in res).strip())

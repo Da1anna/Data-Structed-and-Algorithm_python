@@ -12,10 +12,10 @@ Input
 Output
 输出的每一行为排序结果，用空格隔开，末尾不要空格。
 
-Sample Input www.walltu.com
+Sample Input 1
 13 24 3 56 34 3 78 12 29 49 84 51 9 100
 
-Sample Output www.walltu.com
+Sample Output 1
 3 3 9 12 24 29 34 49 51 56 78 84 100
 '''
 
@@ -35,10 +35,7 @@ def Count_sort(arr):
 
 A = list(map(int,input().strip().split()))
 res = Count_sort(A)
-res_str = ''
-for i in res:
-    res_str += str(i) + ' '
-print(res_str.strip())
+print(' '.join(str(i) for i in res).strip())
 
 
 
