@@ -5,10 +5,15 @@
 '''
 
 def Insert_sort(arr):
+    '''
+    这个方法是将temp值从右往左比较，比较一个移动一个
+    :param arr:
+    :return:
+    '''
     for i in range(1,len(arr)):  #无序数组的遍历
         temp =  arr[i]
         index = i - 1   #比较的位置
-        while index >= 0 and arr[index] > temp:     #循环条件
+        while index >= 0 and arr[index] > temp:     #边比较边往后移
             arr[index+1] = arr[index]
             index -= 1
         arr[index+1] = temp  #最终插入的位置
