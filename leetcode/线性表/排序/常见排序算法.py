@@ -31,7 +31,7 @@ def direct_insert_sort1(lst:list):
 
 
 '''
-改进：从右向左比，边比较边挤空
+改进：从有序数组的右边向左比，边比较边挤空
 '''
 
 def direct_insert_sort2(lst:list):
@@ -47,8 +47,8 @@ def direct_insert_sort2(lst:list):
             lst[index + 1] = lst[index]
             index -= 1
         lst[index + 1] = temp
+    # print(lst)
     return lst
-
 
 '''
 1.2 希尔排序
@@ -59,20 +59,22 @@ def Shell_sort(lst:list, increments:list):
     :param lst:
     :return:
     '''
-    increments.reverse()
     for increment in increments:
         for start in range(increment):
-            insert_sort(lst, start, increment)
+            insert_sort(lst,start,increment)
     return lst
 
 def insert_sort(lst,start,increment):
-    for i in range(start + increment,len(lst),increment):   #遍历待排序数组
+    '''
+    带增量参数的插入排序
+    '''
+    for i in range(start+increment,len(lst),increment):
         temp = lst[i]
-        index = i - increment       #待比较的位置
-        while index >= start and temp < lst[index]:     #边比较边往后移
-            lst[index + increment] = lst[index]
-            index -= increment
-        lst[index + increment] = temp   #将值插入
+        pos = i - increment
+        while pos >= start and temp < lst[pos]:
+            lst[pos + increment] = lst[pos]
+            pos -= increment
+        lst[pos + increment] = temp
 
 
 '''
@@ -106,7 +108,7 @@ def simple_select_1(lst:list):
 
 '''
 改进版：
-    1.根本不用挤空，直接将最小值与有序组的最后一位交换即可
+    1.根本不用挤空，直接将最小值与无序组的首位交换即可
     2.既然定义了min_index，就可以省略temp变量
     3.while循环可以改为for循环
 '''
@@ -189,14 +191,17 @@ def bubble_sort2(lst:list):
 
 def bubble_sort3(lst:list):
   m = len(lst)-1
-  while m > 0:      #因为比较趟数与last_exindex有关系，所以用while循环不用for
-      last_exindex = 0
-      for j in range(m):    #比较0到last_index
+  while m > 0:      #因为比较趟数与pos有关系，所以用while循环不用for
+      pos = 0
+      for j in range(m):    #比较0到pos
           if lst[j] > lst[j + 1]:
               lst[j + 1], lst[j] = lst[j], lst[j + 1]
-              last_exindex = j      #记录最后一次交换的位置
-      m = last_exindex      #赋值给m，若没有发生交换（m = 0），则说明数组已有序
+              pos = j      #记录最后一次交换的位置
+      m = pos      #赋值给m，若没有发生交换（m = 0），则说明数组已有序
   return lst
+# lst = [5,3,1,7,9,8,8,6,4]
+# res = bubble_sort4(lst)
+# print(res)
 
 '''
 3.2 快速排序
@@ -214,7 +219,7 @@ def qksort_R(lst,l:int,h:int):
     if l >= h:
         return
     i,j = l,h
-    x = lst[i]
+    x = lst[i]      #这里的枢纽值取的是数组的第一项
     while i < j:
         while i < j and lst[j] > x:
             j -= 1
@@ -280,8 +285,8 @@ def part_qksort(lst,left,right) -> int:
 ''''''''''''''''''''''''
 lst = [6,7,2,3,1,5,9,4,8]   #输入
 # lst = list(map(int,input().strip().split()))
-qksort_NR(lst,0,8)
-print(lst)
+# qksort_NR(lst,0,8)
+# print(lst)
 # print(''.join(str(i) for i in res).strip())
 
 

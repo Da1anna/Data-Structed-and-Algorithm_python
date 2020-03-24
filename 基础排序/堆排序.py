@@ -46,50 +46,53 @@ def Heap_sort(seq):
 
     return seq
 
-seq = [1,4,2,3,8,9,0,-1,5]
-
-Heap_sort(seq)
-
 
 '''
 第二次理解堆排序
+与前面相比有两点变化：
+1.传入形参lst后，实参seq = [0] + lst，取排序的seq索引为1-n,这样便于计算
+2.建堆参数不一样，比前面少一个
 '''
-def build_maxHeap(sep,startindex):
-    k = len(sep)-1      #最大索引值
+def build_maxHeap(seq,startindex):
+    n = len(seq) - 1    #末位索引
     i = startindex
-    # temp = seq[i]
-    j = 2*i+1   #左叶子节点
-    while j <= k:
+    j = 2*i   #左叶子节点
+    while j <= n:
         #如果有右叶子节点，与左叶子节点进行比较
-        if j+1 <=k and seq[j+1] > seq[j]:
+        if j+1 <= n  and seq[j+1] > seq[j]:
             j += 1
         #将较大值与父节点进行比较
         if seq[j] > seq[i]:
             seq[i],seq[j] = seq[j],seq[i]
             #刷新父节点和叶子节点，便于继续向下进行比较
             i = j
-            j = 2*i+1
+            j = 2*i
         #子节点不比父节点大的情况，什么都不做
         else:
             break
-def heap_sort(seq):
-    n = len(seq)
+def heap_sort(lst):
+    #建堆
+    seq = [0] + lst
+    n = len(seq) - 1
     #从第一个非叶子节点开始（从后往前）建堆
-    for i in range(n//2-1,-1,-1):
+    for i in range(n//2,0,-1):
         build_maxHeap(seq,i)
-    print('大顶堆：',seq)
+    print('大顶堆：',seq[1:])
 
-    for i in range(n-1,0,-1):
+    #排序
+    res = []
+    for i in range(n,1,-1):
         #交换堆顶值与数组末位值
-        seq[0],seq[i] = seq[i],seq[0]
-        #将堆顶值移到合适位置，重新构建大顶堆，注意被交换到末位的最大值不再参与建堆
-        build_maxHeap(seq[:i],0)
-    print('排序后：',seq)
-    return seq
+        seq[1],seq[i] = seq[i],seq[1]
+        res.append(seq.pop())
+        build_maxHeap(seq,1)
+    res.append(seq.pop())
 
-heap_sort(seq)
-# print(seq)
+    # print('排序后：',res)
+    return res
 
+lst = [3,1,2,4,5]
+print(heap_sort(lst))
 
 
 
