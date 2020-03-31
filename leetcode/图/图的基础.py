@@ -153,7 +153,9 @@ def dijkstra(aGraph:Graph,start:Vertex):
     start.setDistance(0)
     pq.buildHeap([(v.getDistance(),v) for v in aGraph])
 
-    while not pq.isEmpty():
+    # while not pq.isEmpty():
+    while pq.currentSize > 1:  # 保留优先队列一个值的原因是优先队列的初始化时会先加一个（0，0）元组，用处是便于计算堆的索引
+
         curV = pq.delMin()
         for nextV in curV.getConnections():
             newDist = curV.getDistance() + curV.getWeight(nextV)
@@ -186,4 +188,33 @@ for v in v[1:]:
 
 '''
 4.最小生成树
+注：同Dijkstra算法很相似
 '''
+
+def Prim(aGraph:Graph,start:Vertex):
+    pq = PriorityQueue()
+    # for v in aGraph:
+    #     v.setDistance(100)
+    #     v.setPred(None)
+    start.setDistance(0)
+    pq.buildHeap([(v.getDistance(),v) for v in aGraph])
+
+    res = []
+    # while not pq.isEmpty():
+    while pq.currentSize > 1:   #保留优先队列一个值的原因是优先队列的初始化时会先加一个（0，0）元组，用处是便于计算堆的索引
+        curV = pq.delMin()
+        for nbr in curV.getConnections():
+            cost = curV.getWeight(nbr)
+            if nbr in pq and cost < nbr.getDistance():
+                nbr.setDistance(cost)
+                nbr.setPred(curV)
+                pq.decreaseKey(nbr,cost)
+        res.append(curV.id)
+    # res.pop()
+    print(res)
+
+#测试
+# Prim(g,g.getVertex('u'))
+#结果为何多了一个东西<generator object？？？
+
+

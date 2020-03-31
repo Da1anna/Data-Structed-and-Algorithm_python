@@ -95,7 +95,51 @@ class Solution:
         return res
 
 '''
-给定一个二叉树，返回它的 后序 遍历。
+2.2 层次遍历II
+给定一个二叉树，返回其节点值自底向上的层次遍历。 （即按从叶子节点所在层到根节点所在的层，逐层从左向右遍历）
+
+例如：
+给定二叉树 [3,9,20,null,null,15,7],
+
+    3
+   / \
+  9  20
+    /  \
+   15   7
+返回其自底向上的层次遍历为：
+
+[
+  [15,7],
+  [9,20],
+  [3]
+]
+
+来源：力扣（LeetCode）
+链接：https://leetcode-cn.com/problems/binary-tree-level-order-traversal-ii
+著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
+'''
+def levelTrace_reverse(root:TreeNode) -> [[int]]:
+    if not root:
+        return []
+    queue = [root]
+    res = []
+
+    while queue:
+        size = len(queue)
+        tmp = []
+        for _ in range(size):
+            cur = queue.pop(0)
+            tmp.append(cur.val)
+            if cur.left:
+                queue.append(cur.left)
+            if cur.right:
+                queue.append(cur.right)
+        res.insert(0,tmp)
+    return res
+
+
+'''
+3.给定一个二叉树，返回它的 后序 遍历。
 
 示例:
 
@@ -120,7 +164,48 @@ class Solution:
 #迭代版
 
 
+'''
+4.首个共同祖先
+设计并实现一个算法，找出二叉树中某两个节点的第一个共同祖先。不得将其他的节点存储在另外的数据结构中。注意：这不一定是二叉搜索树。
 
+例如，给定如下二叉树: root = [3,5,1,6,2,0,8,null,null,7,4]
+
+    3
+   / \
+  5   1
+ / \ / \
+6  2 0  8
+  / \
+ 7   4
+示例 1:
+输入: root = [3,5,1,6,2,0,8,null,null,7,4], p = 5, q = 1
+输入: 3
+解释: 节点 5 和节点 1 的最近公共祖先是节点 3。
+示例 2:
+输入: root = [3,5,1,6,2,0,8,null,null,7,4], p = 5, q = 4
+输出: 5
+解释: 节点 5 和节点 4 的最近公共祖先是节点 5。因为根据定义最近公共祖先节点可以为节点本身。
+说明:
+所有节点的值都是唯一的。
+p、q 为不同节点且均存在于给定的二叉树中。
+
+来源：力扣（LeetCode）
+链接：https://leetcode-cn.com/problems/first-common-ancestor-lcci
+著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
+'''
+def lowestCommonAncestor(root: TreeNode, p: TreeNode, q: TreeNode) -> TreeNode:
+    #边界条件
+    if not root:
+        return None
+    if root in [p,q]:
+        return root
+    #递归体
+    left = lowestCommonAncestor(root.left,p,q)
+    right = lowestCommonAncestor(root.right,p,q)
+    #本函数返回值
+    if left and right:
+        return root
+    return left or right
 
 
 

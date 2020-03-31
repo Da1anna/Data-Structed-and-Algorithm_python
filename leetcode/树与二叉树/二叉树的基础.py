@@ -2,7 +2,7 @@
 1.二叉树的节点表示
 '''
 class BinaryNode():
-    def __init__(self,value):
+    def __init__(self,value=None):
         self.key = value
         self.left = None
         self.right = None
@@ -104,6 +104,44 @@ def preorder(treeNode):
         preorder(treeNode.get_rightnode())
         # print(treeNode.getvalue())    #后序
 
+#3.2 层次遍历
+def levelTrace(root:BinaryNode) -> [int]:
+    if not root:
+        return []
+    queue = [root]
+    res = []
+
+    while queue:
+        cur = queue.pop(0)
+        res.append(cur.key)
+        if cur.left:
+            queue.append(cur.left)
+        if cur.right:
+            queue.append(cur.right)
+    return res
+
+#测试
+
+#将列表初始化到完全二叉树
+lst = [3,9,20,None,None,15,7]
+root = BinaryNode()
+
+def listBuildTree(node:BinaryNode,lst,i):
+    if i >= len(lst):
+        return None
+    node.key = lst[i]
+    node.left = listBuildTree(BinaryNode(),lst,2*i+1)
+    node.right = listBuildTree(BinaryNode(),lst,2*i+2)
+    return node
+
+listBuildTree(root,lst,0)
+print(root.right.key)
+
+#层次遍历
+res = levelTrace(root)
+print(res)
+
+
 '''
 4.基于二叉堆的优先队列
 二叉堆的性质：完全二叉树 + 根节点值大于（小于）两个子节点值
@@ -157,18 +195,22 @@ class BinHeap():
         return minVal
 
 
-bh = BinHeap()
-# bh.buildHeap([9,5,6,2,3])
-lst = [9,5,6,2,3]
-for num in lst:
-    bh.insert(num)
-print(bh)
+#测试
 
-print(bh.delMin())
-print(bh.delMin())
-print(bh.delMin())
-print(bh.delMin())
-print(bh.delMin())
+# bh = BinHeap()
+# # bh.buildHeap([9,5,6,2,3])
+# lst = [9,5,6,2,3]
+# for num in lst:
+#     bh.insert(num)
+# print(bh)
+#
+# print(bh.delMin())
+# print(bh.delMin())
+# print(bh.delMin())
+# print(bh.delMin())
+# print(bh.delMin())
+
+
 
 '''
 5.二叉搜索树的实现
