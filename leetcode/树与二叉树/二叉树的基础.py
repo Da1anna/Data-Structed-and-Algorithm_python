@@ -89,6 +89,8 @@ def build_parseTree(fpexp):
         else:
             print("有错误字符")
     return etree
+
+#测试
 # pt = build_parseTree("( 10 + 5 ) * ( 3 - 1 )")
 # pt.preorder()
 
@@ -120,24 +122,48 @@ def levelTrace(root:BinaryNode) -> [int]:
             queue.append(cur.right)
     return res
 
-#测试
+#将列表初始化到完全二叉树，有两种方式
 
-#将列表初始化到完全二叉树
-lst = [3,9,20,None,None,15,7]
-root = BinaryNode()
-
-def listBuildTree(node:BinaryNode,lst,i):
+def list_buildTree(lst:list,i=0):
+    '''
+    遇到空值时，本身节点的key为None，但节点不为None,叶节点的左右指针指向None,即叶节点的子节点为None
+    这样的构造在某些条件判断下不好用，eg：if root.left:
+    :param lst:
+    :param i:
+    :return:
+    '''
     if i >= len(lst):
         return None
+    node = BinaryNode()
     node.key = lst[i]
-    node.left = listBuildTree(BinaryNode(),lst,2*i+1)
-    node.right = listBuildTree(BinaryNode(),lst,2*i+2)
+    node.left = list_buildTree(lst,2*i+1)
+    node.right = list_buildTree(lst,2*i+2)
     return node
 
-listBuildTree(root,lst,0)
-print(root.right.key)
+def list_buildTree_2(lst:list,i=0) -> BinaryNode:
+    '''
+    遇到空值时，本身节点为空，即父节点的左右指针指向None值
+    这样的构造在遍历时不会打印None值
+    :param lst:
+    :param i:
+    :return:
+    '''
+    if i >= len(lst):
+        return None
+    if lst[i] == None:
+        return None
+    node = BinaryNode()
+    node.key = lst[i]
+    node.left = list_buildTree_2(lst, 2 * i + 1)
+    node.right = list_buildTree_2(lst, 2 * i + 2)
+    return node
 
-#层次遍历
+#测试
+lst = [5,4,8,11,None,13,4,7,2,None,None,None,None,5,1]
+root = list_buildTree(lst)
+print(root.left.right)
+
+#测试层次遍历
 res = levelTrace(root)
 print(res)
 
