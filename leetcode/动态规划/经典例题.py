@@ -122,7 +122,7 @@ v=[0,8,6,3,5,5]
 4
 '''
 
-def LongestSubQuence(lst:list) -> int:
+def LIS(lst:list) -> int:
     k = len(lst)
     dp = [1 for _ in range(k)]
 
@@ -136,8 +136,8 @@ def LongestSubQuence(lst:list) -> int:
     return max(dp)
 
 #测试
-lst = [10,9,2,5,3,7,20,1]
-# print(LongestSubQuence(lst))
+lst = [1,3,6,7,9,4,10,5,6]
+print(LIS(lst))
 
 '''
 6.最长公共子序列(LCS)
@@ -167,7 +167,7 @@ def LCS(a:list,b:list) -> int:
 #测试
 a = [1,2,5,3,1]
 b = [2,1,5,1]
-print(LCS(a,b))
+# print(LCS(a,b))
 
 
 
