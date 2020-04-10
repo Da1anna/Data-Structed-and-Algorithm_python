@@ -129,14 +129,14 @@ def simple_select_2(lst:list):
 2.2 归并排序（二路归并）
 '''
 #递归版
-def M_sort(lst:list):
+def merge_sort_R(lst:list):
     # 递归边界
     if len(lst) == 1:
         return lst
     #递归模式
     mid = len(lst) // 2
-    lst1 = M_sort(lst[:mid])
-    lst2 = M_sort(lst[mid:])
+    lst1 = merge_sort_R(lst[:mid])
+    lst2 = merge_sort_R(lst[mid:])
     #返回值
     return merge(lst1,lst2)
 
@@ -159,6 +159,9 @@ def merge(lst1,lst2):
     res.extend(lst1[i:] if i < len(lst1) else lst2[j:])
     return res
 
+
+#非递归版
+# def merge_sort_NR():
 
 '''
 3.交换类排序
@@ -205,7 +208,6 @@ def bubble_sort3(lst:list):
 
 '''
 3.2 快速排序
-
 '''
 #递归版
 def qksort_R(lst,l:int,h:int):

@@ -137,7 +137,7 @@ def LIS(lst:list) -> int:
 
 #测试
 lst = [1,3,6,7,9,4,10,5,6]
-print(LIS(lst))
+# print(LIS(lst))
 
 '''
 6.最长公共子序列(LCS)
@@ -160,14 +160,14 @@ def LCS(a:list,b:list) -> int:
                 dp[i][j] = dp[i-1][j-1] + 1
             else:
                 dp[i][j] = max(dp[i-1][j],dp[i][j-1])
-    #如何列出最长公共子序列？
+    #如何列出最长公共子序列？见作业2的LCS
 
     return dp[-1][-1]
 
 #测试
 a = [1,2,5,3,1]
 b = [2,1,5,1]
-# print(LCS(a,b))
+print(LCS(a,b))
 
 
 

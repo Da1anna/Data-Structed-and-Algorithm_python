@@ -4,6 +4,7 @@
 输出排好序的用空格隔开的字符串
 '''
 
+#这是最简单版的冒泡
 def Bubble_sort(lst):
     for i in range(1,len(lst)):     #趟数
         for j in range(len(lst)-i):     #要比较的位置
