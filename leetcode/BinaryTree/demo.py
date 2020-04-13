@@ -16,3 +16,5 @@
 #
 # bol = [1,2,3] in lst
 # print(bol)
+
+

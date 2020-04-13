@@ -1,4 +1,7 @@
-#树的节点定义和二叉树的初始化
+'''
+树的节点定义和二叉树的初始化
+'''
+
 #1.节点定义
 class TreeNode():
     def __init__(self,key=None):
@@ -47,7 +50,6 @@ def list_buildTree_2(lst:list,i=0) -> TreeNode:
 lst = [5,4,8,11,None,13,4,7,2,None,None,None,None,5,1]
 root = list_buildTree_2(lst)
 # print(root.left.left.left.left)
-
 
 
 '''

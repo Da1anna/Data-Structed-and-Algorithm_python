@@ -1,5 +1,6 @@
 '''
 1.图的邻接表的实现
+注：若初始化时，给的是邻接矩阵，也可以进行初始化
 '''
 
 class Vertex:
@@ -8,7 +9,7 @@ class Vertex:
         self.id = key
         self.connectedTo = {}       #字典的key：verTex,value:数字（weight）
 
-    def addNeighbor(self,nbr,weight=0):
+    def addNeighbor(self,nbr,weight=1):
         self.connectedTo[nbr] = weight      #字典的key可以是很多东西，不只是字符串
 
     def getId(self):
@@ -42,7 +43,7 @@ class Graph:
     def __contains__(self, key):
         return key in self.vertList
 
-    def addEdge(self,f,t,cost=0):
+    def addEdge(self,f,t,cost=1):
         if f not in self.vertList:
             self.addVertex(f)
         if t not in self.vertList:
@@ -180,10 +181,10 @@ for cur,nbr,weight in edge:
     g.addEdge(cur, nbr, weight)
 # print(g.getVertex('w'))
 
-#测试
-dijkstra(g,g.getVertex('u'))
-for v in v[1:]:
-    print('u到%s的最短距离：%i' % (v,g.getVertex(v).getDistance()))
+# #测试
+# dijkstra(g,g.getVertex('u'))
+# for v in v[1:]:
+#     print('u到%s的最短距离：%i' % (v,g.getVertex(v).getDistance()))
 
 
 '''
@@ -217,4 +218,49 @@ def Prim(aGraph:Graph,start:Vertex):
 # Prim(g,g.getVertex('u'))
 #结果为何多了一个东西<generator object？？？
 
+'''
+5.拓扑排序
+'''
+def topo_sort(g:Graph):
+    #找出有入度的节点
+    in_nodes = set()
+    for v in g:
+        for nbr in v.getConnections():
+           in_nodes.add(nbr.id)
+    #找出起始节点
+    start_nodes = []
+    for node in g.getVertices():
+        if node not in list(in_nodes):
+            start_nodes.append(node)
+    '''
+    对递归版dfs做点改变
+    '''
+    def dfs(node:Vertex,path=''):
+        if not node.getConnections():
+            paths.append(path + node.id)
+            return
+        for nbr in node.getConnections():
+            dfs(nbr,path + node.id)
+        return
 
+    paths = []
+    for node in start_nodes:
+        dfs(g.getVertex(node))
+
+    #打印结果
+    for str in paths:
+        for char in str:
+            print(char,end=' ')
+        print()
+
+#测试
+if __name__ == "__main__":
+    #初始化图
+    g_topo = Graph()
+    edegs = [('a','c'),('b','c'),('c','d'),('d','e'),('d','f'),('e','g'),('f','g')]
+    for edge in edegs:
+        g_topo.addEdge(edge[0],edge[1])
+    # print(g_topo.getVertex('g').getConnections())
+
+    #调用函数
+    topo_sort(g_topo)
