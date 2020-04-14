@@ -4,8 +4,8 @@
 
 #1.节点定义
 class TreeNode():
-    def __init__(self,key=None):
-        self.key = key
+    def __init__(self, val=None):
+        self.val = val
         self.left = None
         self.right = None
 
@@ -24,7 +24,7 @@ def list_buildTree_2(lst:list, i=0) -> TreeNode:
     if i >= len(lst):
         return TreeNode(None)   #这是修改部分，即使是空节点，也保持返回值和非空节点一致，都是TreeNode()
     node = TreeNode()
-    node.key = lst[i]
+    node.val = lst[i]
     node.left = list_buildTree(lst, 2 * i + 1)
     node.right = list_buildTree(lst, 2 * i + 2)
     return node
@@ -41,12 +41,14 @@ def list_buildTree(lst:list, i=0) -> TreeNode:
     if lst[i] ==None:
         return None
     node = TreeNode()
-    node.key = lst[i]
+    node.val = lst[i]
     node.left = list_buildTree(lst, 2 * i + 1)
     node.right = list_buildTree(lst, 2 * i + 2)
     return node
 
+
 #测试
-lst = [5,4,8,11,None,13,4,7,2,None,None,None,None,5,1]
-root = list_buildTree(lst)
-print(root.left.left.left)
+# if __name__ == "__main__":
+#     lst = [5,4,8,11,None,13,4,7,2,None,None,None,None,5,1]
+#     root = list_buildTree(lst)
+#     print(root.left.left.left)
