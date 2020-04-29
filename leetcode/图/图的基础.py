@@ -221,7 +221,8 @@ def Prim(aGraph:Graph,start:Vertex):
 '''
 5.拓扑排序
 '''
-def topo_sort(g:Graph):
+#递归dfs版：输出多种结果
+def topo_sort_dfs(g:Graph):
     #找出有入度的节点
     in_nodes = set()
     for v in g:
@@ -253,6 +254,37 @@ def topo_sort(g:Graph):
             print(char,end=' ')
         print()
 
+#BFS版:只能输出一种结果
+def topo_sort_bfs(g:Graph):
+    #建立入度表
+    in_degrees = {}
+    for v in g:
+        if v.id not in in_degrees:
+            in_degrees[v.id] = 0
+        for nbr in v.getConnections():
+            in_degrees[nbr.id] = in_degrees.get(nbr.id,0) + 1
+    # print(in_degrees)
+
+    #找起始节点
+    queue = []
+    for key,value in in_degrees.items():
+        if value == 0:
+            queue.append(key)
+    #拓扑排序
+    tuopu = []
+    while queue:
+        cur_id = queue.pop(0)
+        tuopu.append(cur_id)
+        for nbr in g.getVertex(cur_id).getConnections():
+            in_degrees[nbr.id] = in_degrees.get(nbr.id) - 1
+            if in_degrees[nbr.id] == 0:
+                queue.append(nbr.id)
+    #返回结果
+    return tuopu if len(tuopu) == len(g.getVertices()) else []
+
+
+
+
 #测试
 if __name__ == "__main__":
     #初始化图
@@ -263,4 +295,5 @@ if __name__ == "__main__":
     # print(g_topo.getVertex('g').getConnections())
 
     #调用函数
-    topo_sort(g_topo)
+    res = topo_sort_bfs(g_topo)
+    print(res)
