@@ -51,12 +51,6 @@ def notR_jinzhi_Convert2(num,base) -> str:
     return res
 
 
-
-
-
-
-
-
 res = notR_jinzhi_Convert2(4,2)
 print(res)
 
