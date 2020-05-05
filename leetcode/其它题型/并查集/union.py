@@ -17,20 +17,20 @@ class Union():
             x = self.pre[x]
         return x
 
-    def connected(self,x,y):
+    def connect(self,x,y):
         root_x = self.find(x)
         root_y = self.find(y)
-        if root_x != root_y:
-            if self.size[root_x] >= self.size[root_y]:
-                self.pre[root_y] = root_x
-                self.size[root_x] += self.size[root_y]
-            else:
-                self.pre[root_x] = root_y
-                self.size[root_y] += self.size[root_x]
-
-            self.count -= 1
+        if self.size[root_x] >= self.size[root_y]:
+            self.pre[root_y] = root_x
+            self.size[root_x] += self.size[root_y]
         else:
-            return
+            self.pre[root_x] = root_y
+            self.size[root_y] += self.size[root_x]
+
+        self.count -= 1
+
+    def is_connected(self,x,y):
+        return  self.find(x) == self.find(y)
 
     def get_count(self) -> int:
         return self.count

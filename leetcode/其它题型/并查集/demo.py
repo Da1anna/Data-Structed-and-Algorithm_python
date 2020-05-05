@@ -17,4 +17,8 @@ for i in range(m):
 # print(pre)
 queue = [(1,5)]
 cur = queue.pop(0)
-print(cur[2])
+# print(cur[2])
+
+lst = [1,1,2,3]
+lst_ = list(set(lst))
+print(lst_)

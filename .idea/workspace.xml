@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="dd0e0642-5114-4498-8287-3cf954b0a69b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/其它题型/并查集/demo.py" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/其它题型/并查集/demo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/其它题型/并查集/union.py" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/其它题型/并查集/union.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,40 +16,42 @@
     <session id="1487837400">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="9" />
+          <entry key="project.closed" value="10" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.10" value="1" />
+          <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.3" value="1" />
+          <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.7" value="2" />
           <entry key="project.open.time.8" value="2" />
           <entry key="project.open.time.9" value="2" />
-          <entry key="project.opened" value="9" />
+          <entry key="project.opened" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="62" />
+          <entry key="py" value="68" />
           <entry key="pyi" value="1" />
           <entry key="打家劫舍III" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="63" />
+          <entry key="Python" value="69" />
           <entry key="PythonStub" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="13" />
-          <entry key="py" value="19100" />
+          <entry key="py" value="21517" />
           <entry key="打家劫舍III" value="798" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="13" />
-          <entry key="Python" value="19898" />
+          <entry key="Python" value="22315" />
         </counts>
       </usages-collector>
     </session>
@@ -56,7 +60,54 @@
     <favorites_list name="DSandAlgorithm_python" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/leetcode/其它题型/并查集/union.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="239">
+              <caret line="22" column="20" lean-forward="true" selection-end-line="37" />
+              <folding>
+                <marker date="1588583191233" expanded="true" signature="51:52" ph="..." />
+                <marker date="1588583191233" expanded="true" signature="191:195" ph="..." />
+                <marker date="1588583191233" expanded="true" signature="755:806" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/leetcode/其它题型/并查集/最长连续序列.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="473">
+              <caret line="72" column="23" lean-forward="true" selection-start-line="72" selection-start-column="23" selection-end-line="72" selection-end-column="23" />
+              <folding>
+                <element signature="e#244#281#0" expanded="true" />
+                <element signature="e#361#645#0" />
+                <element signature="e#793#1107#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/leetcode/动态规划/经典例题.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="22">
+              <caret line="112" column="29" lean-forward="true" selection-start-line="112" selection-start-column="29" selection-end-line="112" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/leetcode/其它题型/并查集/demo.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="484">
+              <caret line="22" column="21" lean-forward="true" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -103,18 +154,21 @@
         <option value="$PROJECT_DIR$/leetcode/其它题型/位运算/找出只出现一次的数字II.py" />
         <option value="$PROJECT_DIR$/leetcode/其它题型/位运算/只出现一次的数字III.py" />
         <option value="$PROJECT_DIR$/leetcode/其它题型/位运算/两整数之和.py" />
-        <option value="$PROJECT_DIR$/leetcode/其它题型/并查集/union.py" />
         <option value="$PROJECT_DIR$/leetcode/time_vs.py" />
         <option value="$PROJECT_DIR$/leetcode/其它题型/并查集/朋友圈.py" />
         <option value="$PROJECT_DIR$/leetcode/图/general/地图分析.py" />
-        <option value="$PROJECT_DIR$/leetcode/其它题型/并查集/demo.py" />
         <option value="$PROJECT_DIR$/leetcode/其它题型/并查集/岛屿数量.py" />
+        <option value="$PROJECT_DIR$/leetcode/其它题型/并查集/union.py" />
+        <option value="$PROJECT_DIR$/leetcode/其它题型/并查集/被围绕的区域.py" />
+        <option value="$PROJECT_DIR$/leetcode/其它题型/并查集/demo.py" />
+        <option value="$PROJECT_DIR$/leetcode/其它题型/并查集/最长连续序列.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-7" />
-    <option name="width" value="1086" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="75" />
+    <option name="y" value="5" />
+    <option name="width" value="1900" />
     <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager">
@@ -125,6 +179,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane" />
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
@@ -150,14 +205,20 @@
               <item name="其它题型" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="并查集" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
+            <path>
+              <item name="DSandAlgorithm_python" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="leetcode" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="动态规划" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://D:/workspace/python/DS_A/DSandAlgorithm_python/leetcode/其它题型/并查集/union.py" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -181,7 +242,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.岛屿数量">
+  <component name="RunManager" selected="Python.最长连续序列">
     <configuration name="地图分析" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="DSandAlgorithm_python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -203,7 +264,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="朋友圈" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="最长连续序列" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="DSandAlgorithm_python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -215,28 +276,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/leetcode/其它题型/并查集/朋友圈.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="岛屿数量" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="DSandAlgorithm_python" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/leetcode/其它题型/并查集" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/leetcode/其它题型/并查集/岛屿数量.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/leetcode/其它题型/并查集/最长连续序列.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -371,6 +411,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="被围绕的区域" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="DSandAlgorithm_python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/leetcode/其它题型/并查集" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/leetcode/其它题型/并查集/被围绕的区域.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="树的子结构" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="DSandAlgorithm_python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -476,6 +537,48 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="朋友圈" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="DSandAlgorithm_python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/leetcode/其它题型/并查集" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/leetcode/其它题型/并查集/朋友圈.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="岛屿数量" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="DSandAlgorithm_python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/leetcode/其它题型/并查集" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/leetcode/其它题型/并查集/岛屿数量.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="demo" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="DSandAlgorithm_python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -520,17 +623,15 @@
     </configuration>
     <list>
       <item itemvalue="Python.地图分析" />
-      <item itemvalue="Python.朋友圈" />
       <item itemvalue="Python.time_vs" />
       <item itemvalue="Python.demo" />
-      <item itemvalue="Python.岛屿数量" />
+      <item itemvalue="Python.最长连续序列" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.岛屿数量" />
+        <item itemvalue="Python.最长连续序列" />
         <item itemvalue="Python.demo" />
         <item itemvalue="Python.地图分析" />
-        <item itemvalue="Python.朋友圈" />
         <item itemvalue="Python.time_vs" />
       </list>
     </recent_temporary>
@@ -553,15 +654,16 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="75" y="5" width="1900" height="1047" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.5646037" visible="true" weight="0.24973656" />
-      <window_info id="Structure" order="1" sideWeight="0.4353963" side_tool="true" visible="true" weight="0.24973656" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.57894737" visible="true" weight="0.25456497" />
+      <window_info id="Structure" order="1" sideWeight="0.42105263" side_tool="true" visible="true" weight="0.25456497" />
       <window_info id="Favorites" order="2" sideWeight="0.5013441" side_tool="true" weight="0.24973656" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.24212812" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3995657" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.29166666" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.5038002" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -705,13 +807,6 @@
     <entry file="file://$PROJECT_DIR$/leetcode/动态规划/题库.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/leetcode/动态规划/经典例题.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="524">
-          <caret line="91" column="13" lean-forward="true" selection-start-line="91" selection-start-column="13" selection-end-line="91" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/leetcode/动态规划/general/打家劫舍III">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
@@ -842,9 +937,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="428">
           <caret line="115" lean-forward="true" selection-start-line="115" selection-end-line="115" />
-          <folding>
-            <element signature="e#513#550#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -852,11 +944,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="362">
           <caret line="140" column="31" lean-forward="true" selection-start-line="140" selection-start-column="31" selection-end-line="140" selection-end-column="31" />
-          <folding>
-            <element signature="e#536#547#0" expanded="true" />
-            <marker date="1588474051344" expanded="true" signature="707:708" ph="..." />
-            <marker date="1588474051344" expanded="true" signature="1521:2424" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -864,42 +951,57 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
           <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="e#1#12#0" expanded="true" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/其它题型/并查集/被围绕的区域.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="89" column="36" lean-forward="true" selection-start-line="89" selection-start-column="36" selection-end-line="89" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/其它题型/并查集/岛屿数量.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="770">
+          <caret line="54" column="34" lean-forward="true" selection-start-line="54" selection-start-column="34" selection-end-line="54" selection-end-column="34" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/leetcode/其它题型/并查集/union.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" selection-start-line="4" selection-end-line="35" selection-end-column="25" />
+        <state relative-caret-position="239">
+          <caret line="22" column="20" lean-forward="true" selection-end-line="37" />
           <folding>
-            <marker date="1588471654054" expanded="true" signature="51:52" ph="..." />
-            <marker date="1588471654054" expanded="true" signature="191:195" ph="..." />
+            <marker date="1588583191233" expanded="true" signature="51:52" ph="..." />
+            <marker date="1588583191233" expanded="true" signature="191:195" ph="..." />
+            <marker date="1588583191233" expanded="true" signature="755:806" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/leetcode/其它题型/并查集/demo.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        <state relative-caret-position="484">
+          <caret line="22" column="21" lean-forward="true" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/leetcode/其它题型/并查集/岛屿数量.py">
+    <entry file="file://$PROJECT_DIR$/leetcode/动态规划/经典例题.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
-          <caret line="121" column="30" lean-forward="true" selection-start-line="121" selection-start-column="30" selection-end-line="121" selection-end-column="30" />
+          <caret line="112" column="29" lean-forward="true" selection-start-line="112" selection-start-column="29" selection-end-line="112" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/其它题型/并查集/最长连续序列.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="473">
+          <caret line="72" column="23" lean-forward="true" selection-start-line="72" selection-start-column="23" selection-end-line="72" selection-end-column="23" />
           <folding>
-            <element signature="e#337#384#0" expanded="true" />
-            <element signature="e#599#2058#0" />
-            <element signature="e#605#834#0" />
-            <element signature="e#680#834#0" />
-            <element signature="e#752#834#0" />
-            <marker date="1588561108755" expanded="true" signature="2250:2631" ph="..." />
-            <marker date="1588561108755" expanded="true" signature="4290:4291" ph="..." />
+            <element signature="e#244#281#0" expanded="true" />
+            <element signature="e#361#645#0" />
+            <element signature="e#793#1107#0" />
           </folding>
         </state>
       </provider>
