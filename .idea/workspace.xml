@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dd0e0642-5114-4498-8287-3cf954b0a69b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/leetcode/其它题型/并查集/最长连续序列.py" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/其它题型/并查集/最长连续序列.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leetcode/其它题型/并查集/朋友圈.py" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/其它题型/并查集/朋友圈.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/经典算法/python-data-structure-cn.py" beforeDir="false" afterPath="$PROJECT_DIR$/经典算法/python-data-structure-cn.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,42 +14,42 @@
     <session id="1487837400">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="11" />
+          <entry key="project.closed" value="13" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.10" value="1" />
-          <entry key="project.open.time.11" value="1" />
+          <entry key="project.open.time.11" value="2" />
           <entry key="project.open.time.3" value="1" />
-          <entry key="project.open.time.5" value="1" />
+          <entry key="project.open.time.5" value="2" />
           <entry key="project.open.time.7" value="2" />
           <entry key="project.open.time.8" value="2" />
           <entry key="project.open.time.9" value="2" />
-          <entry key="project.opened" value="11" />
+          <entry key="project.opened" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="74" />
+          <entry key="py" value="79" />
           <entry key="pyi" value="1" />
           <entry key="打家劫舍III" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="75" />
+          <entry key="Python" value="80" />
           <entry key="PythonStub" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="13" />
-          <entry key="py" value="22465" />
+          <entry key="dummy" value="18" />
+          <entry key="py" value="25109" />
           <entry key="打家劫舍III" value="798" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="13" />
-          <entry key="Python" value="23263" />
+          <entry key="PLAIN_TEXT" value="18" />
+          <entry key="Python" value="25907" />
         </counts>
       </usages-collector>
     </session>
@@ -60,7 +58,38 @@
     <favorites_list name="DSandAlgorithm_python" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/leetcode/其它题型/字典树/Trie.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="23" column="37" lean-forward="true" selection-end-line="59" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/leetcode/其它题型/字典树/单词搜索II.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="517">
+              <caret line="68" lean-forward="true" selection-start-line="68" selection-end-line="68" />
+              <folding>
+                <marker date="1588862114793" expanded="true" signature="726:735" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/leetcode/其它题型/并查集/demo.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="484">
+              <caret line="22" column="21" lean-forward="true" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -119,6 +148,10 @@
         <option value="$PROJECT_DIR$/leetcode/其它题型/脑经急转弯/捡石子游戏.py" />
         <option value="$PROJECT_DIR$/leetcode/其它题型/脑经急转弯/移动3石子.py" />
         <option value="$PROJECT_DIR$/leetcode/其它题型/脑经急转弯/灯泡开关.py" />
+        <option value="$PROJECT_DIR$/leetcode/其它题型/字典树/词典中最长的单词.py" />
+        <option value="$PROJECT_DIR$/leetcode/其它题型/字典树/单词搜索.py" />
+        <option value="$PROJECT_DIR$/leetcode/其它题型/字典树/实现字典树（前缀树）.py" />
+        <option value="$PROJECT_DIR$/leetcode/其它题型/字典树/单词搜索II.py" />
       </list>
     </option>
   </component>
@@ -160,7 +193,14 @@
               <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
               <item name="leetcode" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="其它题型" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="脑经急转弯" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="字典树" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="DSandAlgorithm_python" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="leetcode" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="其它题型" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="并查集" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
           </expand>
           <select />
@@ -194,7 +234,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.灯泡开关">
+  <component name="RunManager" selected="Python.单词搜索II">
     <configuration name="地图分析" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="DSandAlgorithm_python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -216,7 +256,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="最长连续序列" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="词典中最长的单词" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="DSandAlgorithm_python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -224,11 +264,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/leetcode/其它题型/并查集" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/leetcode/其它题型/字典树" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/leetcode/其它题型/并查集/最长连续序列.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/leetcode/其它题型/字典树/词典中最长的单词.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -250,6 +290,48 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/leetcode/其它题型/脑经急转弯/移动3石子.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="单词搜索II" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="DSandAlgorithm_python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/leetcode/其它题型/字典树" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/leetcode/其它题型/字典树/单词搜索II.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="最长连续序列" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="DSandAlgorithm_python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/leetcode/其它题型/并查集" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/leetcode/其它题型/并查集/最长连续序列.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -597,15 +679,15 @@
     <list>
       <item itemvalue="Python.地图分析" />
       <item itemvalue="Python.demo" />
-      <item itemvalue="Python.最长连续序列" />
       <item itemvalue="Python.移动3石子" />
-      <item itemvalue="Python.灯泡开关" />
+      <item itemvalue="Python.词典中最长的单词" />
+      <item itemvalue="Python.单词搜索II" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.灯泡开关" />
+        <item itemvalue="Python.单词搜索II" />
+        <item itemvalue="Python.词典中最长的单词" />
         <item itemvalue="Python.移动3石子" />
-        <item itemvalue="Python.最长连续序列" />
         <item itemvalue="Python.demo" />
         <item itemvalue="Python.地图分析" />
       </list>
@@ -630,9 +712,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.5787188" visible="true" weight="0.24973656" />
-      <window_info id="Structure" order="1" sideWeight="0.42128122" side_tool="true" visible="true" weight="0.24973656" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.5765472" visible="true" weight="0.24973656" />
+      <window_info id="Structure" order="1" sideWeight="0.42345276" side_tool="true" visible="true" weight="0.24973656" />
       <window_info id="Favorites" order="2" sideWeight="0.5013441" side_tool="true" weight="0.24973656" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -654,28 +737,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/leetcode/BinaryTree/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/leetcode/BinaryTree/general/最近公共祖先.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="524">
-          <caret line="49" column="14" lean-forward="true" selection-start-line="49" selection-start-column="14" selection-end-line="49" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/leetcode/BinaryTree/general/树的子结构.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/leetcode/BinaryTree/demo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="34" column="38" selection-start-line="34" selection-start-column="38" selection-end-line="34" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/leetcode/BinaryTree/general/二叉树中所有距离为 K 的结点.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="194">
@@ -932,13 +993,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/leetcode/其它题型/并查集/demo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="22" column="21" lean-forward="true" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/leetcode/动态规划/经典例题.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
@@ -950,11 +1004,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <element signature="e#244#281#0" expanded="true" />
-            <element signature="e#361#645#0" />
-            <element signature="e#793#1107#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -969,11 +1018,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="433">
           <caret line="22" column="20" lean-forward="true" selection-end-line="37" />
-          <folding>
-            <marker date="1588583191233" expanded="true" signature="51:52" ph="..." />
-            <marker date="1588583191233" expanded="true" signature="191:195" ph="..." />
-            <marker date="1588583191233" expanded="true" signature="755:806" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1002,6 +1046,47 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="462">
           <caret line="21" column="12" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/其它题型/字典树/词典中最长的单词.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="42" column="16" lean-forward="true" selection-start-line="42" selection-start-column="16" selection-end-line="42" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/其它题型/字典树/单词搜索.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="77">
+          <caret line="56" column="11" lean-forward="true" selection-start-line="56" selection-start-column="11" selection-end-line="56" selection-end-column="11" />
+          <folding>
+            <marker date="1588841970291" expanded="true" signature="570:668" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/其它题型/字典树/Trie.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="23" column="37" lean-forward="true" selection-end-line="59" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/其它题型/并查集/demo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="22" column="21" lean-forward="true" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/其它题型/字典树/单词搜索II.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="517">
+          <caret line="68" lean-forward="true" selection-start-line="68" selection-end-line="68" />
+          <folding>
+            <marker date="1588862114793" expanded="true" signature="726:735" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
