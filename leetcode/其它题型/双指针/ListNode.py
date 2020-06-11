@@ -14,6 +14,10 @@ class ListNode:
             s += '->'+ str(next.val)
             next = next.next
         return s
+
+    # def __lt__(self, other):
+    #     return self.val < other.val
+
 #数组建立链表
 def list_buildNode(arr:[int]) -> ListNode:
     head = ListNode(arr[0])
