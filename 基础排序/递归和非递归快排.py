@@ -27,7 +27,9 @@ def Quick_sort1(arr,left,right):
 
 '''
 递归版，左右指针法
-据分析，这个方法也是对的
+    思路：1.指定一个岗哨（一般是数组是首位），从左右两端开始（不包括岗哨），交换满足
+            条件的值，循环结束后，将某个值与岗哨交换
+         2.递归的处理子数组   
 '''
 def Quick_sort2(arr,left,right):
     if left < right:

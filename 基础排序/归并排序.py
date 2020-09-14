@@ -53,7 +53,6 @@ def merge2(seq1,seq2):
 
 '''
 非递归版
-
 '''
 def Merge_sort_NotR(arr):
     i = 1
@@ -61,6 +60,7 @@ def Merge_sort_NotR(arr):
         low = 0
         while low < len(arr):
             mid = low + i
+            # 因为python切片对于超出索引时会自动处理只选取有效索引部分，故不必担心
             high = mid + i
             merge3(low,mid,high,arr)
             low = high
@@ -72,11 +72,7 @@ def merge3(low,mid,high,arr):
     这里的子排序函数的参数与上面两个不同
     原因是迭代与递归的思想不一样，如果也返回排好序的子序列，不好处理迭代
     具体原因以后再分析
-    :param low:
-    :param mid:
-    :param high:
     :param arr: 初始输入数组，但每迭代一次都更加有序
-    :return: 空
     '''
     seq1 = arr[low:mid]
     seq2 = arr[mid:high]

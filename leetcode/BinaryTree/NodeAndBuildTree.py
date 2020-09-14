@@ -32,9 +32,6 @@ class TreeNode():
 def list_buildTree(lst:list, i=0) -> TreeNode:
     '''
     这个构建更好
-    :param lst:
-    :param i:
-    :return:
     '''
     if i >= len(lst):
         return None

@@ -11,6 +11,8 @@ def Bubble_sort(lst):
             if lst[j] > lst[j+1]:
                 lst[j],lst[j+1] = lst[j+1],lst[j]
     return lst
+
+
 lst = list(map(int,input("请输入一个数组：").strip().split()))
 res = Bubble_sort(lst)
 # res_str = ''

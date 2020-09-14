@@ -50,6 +50,7 @@ def direct_insert_sort2(lst:list):
     # print(lst)
     return lst
 
+
 '''
 1.2 希尔排序
 '''
@@ -190,6 +191,8 @@ def bubble_sort2(lst:list):
 
 '''
 算法改进版：增加交换位置变量
+    感觉就增加一个swap布尔变量来记录交换或否就好了，没有发生交换就结束
+    记录交换位置太细致了
 '''
 
 def bubble_sort3(lst:list):
@@ -209,14 +212,11 @@ def bubble_sort3(lst:list):
 '''
 3.2 快速排序
 '''
-#递归版
+#递归版：填坑法
 def qksort_R(lst,l:int,h:int):
     '''
-
-    :param lst:
     :param l: 数组首位地址
     :param h: 数组末位地址
-    :return:
     '''
     if l >= h:
         return
