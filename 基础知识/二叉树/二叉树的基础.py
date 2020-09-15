@@ -422,32 +422,59 @@ class BinarySearchTree:
 
     #查
     def get(self,key):
-        return self._get(key,self.root)
+        resNode = self._get(key,self.root)
+        if resNode:
+            return resNode.val
+        else:
+            return None
 
     def _get(self,key,curNode):
+        '''
+        返回存储目标值的节点
+        '''
         if not curNode:
             return None
         if key == curNode.key:
-            return curNode.val
+            return curNode
         elif key < curNode.key:
             return self._get(key,curNode.left)
         else:
             return self._get(key,curNode.right)
 
+    #删除一个节点，很复杂，考虑情况比较多，暂时略
+    def delete(self,key):
+        pass
 
+    def __len__(self):
+        return self.size
+
+    def __setitem__(self,key,val):
+        self.put(key,val)
+
+    def __getitem__(self,key):
+        return self.get(key)
+
+    def __contains__(self,key):
+        if self._get(key,self.root):
+            return True
+        else:
+            return False
+
+    def __delitem__(self,key):
+        self.delete(key)
 
 #测试
 myBST = BinarySearchTree()
-myBST.put(4,'a')
-myBST.put(3,'b')
-myBST.put(6,'c')
-myBST.put(1,'d')
-myBST.put(2,'f')
-myBST.put(5,'e')
-myBST.put(7,'g')
-res1 = myBST.get(7)
-print(res1)
-
+myBST[4] = 'a'
+myBST[2] = 'b'
+myBST[1] = 'd'
+myBST[5] = 'c'
+myBST[3] = 'e'
+myBST[6] = 'f'
+myBST[7] = 'g'
+print(myBST[5])
+print(myBST[3])
+print(1 in myBST)
 
 
 
