@@ -111,6 +111,7 @@ def evaluate(parseTree):
 
 '''
 3.树的遍历
+    3.1 递归遍历
 '''
 #3.1 前序遍历：逐个打印
 def preorder(treeNode):
@@ -128,7 +129,9 @@ def inOrder(root):
     return inOrder(root.left) + root.key + inOrder(root.right)
 
 
-#3.2 层次遍历： 用队列，不说明层次
+'''
+    3.2 层次遍历： 用队列，不说明层次
+'''
 def levelTrace(root:BinaryTree) -> [int]:
     if not root:
         return []
@@ -144,6 +147,13 @@ def levelTrace(root:BinaryTree) -> [int]:
 
             queue.append(cur.right)
     return res
+
+'''
+    3.3 前中后的非递归遍历
+        用栈来实现
+        见另一个.py文件 
+'''
+
 
 '''
 将列表初始化到完全二叉树
@@ -464,20 +474,25 @@ class BinarySearchTree:
         self.delete(key)
 
 #测试
-myBST = BinarySearchTree()
-myBST[4] = 'a'
-myBST[2] = 'b'
-myBST[1] = 'd'
-myBST[5] = 'c'
-myBST[3] = 'e'
-myBST[6] = 'f'
-myBST[7] = 'g'
-print(myBST[5])
-print(myBST[3])
-print(1 in myBST)
+# myBST = BinarySearchTree()
+# myBST[4] = 'a'
+# myBST[2] = 'b'
+# myBST[1] = 'd'
+# myBST[5] = 'c'
+# myBST[3] = 'e'
+# myBST[6] = 'f'
+# myBST[7] = 'g'
+# print(myBST[5])
+# print(myBST[3])
+# print(1 in myBST)
 
 
+if __name__ == "__main__":
+    lst = [5,4,3,7,2]
+    root = list_buildTree_2(lst)
 
+    res = preorder_NR(root)
+    print(res)
 
 
 

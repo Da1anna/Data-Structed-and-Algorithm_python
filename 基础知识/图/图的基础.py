@@ -79,7 +79,8 @@ class Graph:
 
 '''
 2.广度优先遍历BFS和深度优先遍历DFS
-注:这里考虑的是强连通图
+    注:这里考虑的是强连通图,非强连通图见另一个py
+    
 '''
 
 #初始化图
@@ -134,8 +135,6 @@ def DFS(g:Graph,start:Vertex):
                 res.append(nbr.id)
                 found_newV = True
                 break
-            else:
-                continue
         if  not found_newV:
             stack.pop()
 
@@ -194,9 +193,6 @@ for cur,nbr,weight in edge:
 
 def Prim(aGraph:Graph,start:Vertex):
     pq = PriorityQueue()
-    # for v in aGraph:
-    #     v.setDistance(100)
-    #     v.setPred(None)
     start.setDistance(0)
     pq.buildHeap([(v.getDistance(),v) for v in aGraph])
 
@@ -205,18 +201,16 @@ def Prim(aGraph:Graph,start:Vertex):
     while pq.currentSize > 1:   #保留优先队列一个值的原因是优先队列的初始化时会先加一个（0，0）元组，用处是便于计算堆的索引
         curV = pq.delMin()
         for nbr in curV.getConnections():
-            cost = curV.getWeight(nbr)
+            cost = curV.getDistance() + curV.getWeight(nbr)
             if nbr in pq and cost < nbr.getDistance():
                 nbr.setDistance(cost)
                 nbr.setPred(curV)
                 pq.decreaseKey(nbr,cost)
         res.append(curV.id)
-    # res.pop()
     print(res)
 
 #测试
 # Prim(g,g.getVertex('u'))
-#结果为何多了一个东西<generator object？？？
 
 '''
 5.拓扑排序
@@ -295,5 +289,5 @@ if __name__ == "__main__":
     # print(g_topo.getVertex('g').getConnections())
 
     #调用函数
-    res = topo_sort_bfs(g_topo)
+    res = topo_sort_dfs(g_topo)
     print(res)
