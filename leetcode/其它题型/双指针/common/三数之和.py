@@ -89,9 +89,25 @@ class Solution:
                     r -= 1
         return res
 
+    #延续两数之和的做法，用字典
+    #行不通，因为得出的三元组集合无法去重
+    def threeSum_3(self, nums: [int]) -> [[int]]:
+        d = {}
+        res = []
+        for i in range(len(nums)):
+            for j in range(i+1, len(nums)):
+                d[nums[i]+nums[j]] = (i,j)
+
+        for k in range(len(nums)):
+            if -nums[k] in d and k not in d[-nums[k]]:
+                a,b= d[-nums[k]]
+                tmp = [nums[a], nums[b],nums[k]]
+                if tmp not in res:
+                    res.append(tmp)
+        return res
 
 #测试
-nums = [-1, 0, 1, 2, -1, -4]
+nums = [-1, 0, 1, 2,-1,-4]
 
-res = Solution().threeSum(nums)
+res = Solution().threeSum_3(nums)
 print(res)
